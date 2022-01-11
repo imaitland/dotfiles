@@ -11,8 +11,11 @@ brew cask install font-fira-code
 #### install Nvim:
 After installing nvim, symlink its default config.
 ```
-ln -s -f ~/dotfiles/nvim/init.vim ~/.config/nvim/
+ln -s -f ~/dotfiles/nvim ~/.config/nvim
 ```
+
+Install vim-plug
+
 
 #### install oh-my-zsh
 
