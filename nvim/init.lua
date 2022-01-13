@@ -27,6 +27,21 @@ vim.cmd([[
     Plug 'gruvbox-community/gruvbox'
     " Language Server Provider
     Plug 'neovim/nvim-lspconfig'
+    " Completion - https://github.com/hrsh7th/nvim-cmp
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-cmdline'
+    Plug 'hrsh7th/nvim-cmp'
+
+    " Java language server - java.lua for further config
+    Plug 'mfussenegger/nvim-jdtls'
+
+    " Show function signature when you type - https://github.com/ray-x/lsp_signature.nvim
+    " Required in java.lua
+    Plug 'ray-x/lsp_signature.nvim'
+
     call plug#end()
 ]])
 
