@@ -125,3 +125,7 @@ alias cdesk="ssh iainland@$(cloud)"
 
 # Brazil
 alias bb="brazil-build"
+alias bws="brazil ws"
+
+# Ninja dev sync
+alias nds="ninja-dev-sync"
