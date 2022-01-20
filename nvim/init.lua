@@ -25,6 +25,8 @@ vim.cmd([[
     Plug 'nvim-telescope/telescope.nvim'
     " Theme
     Plug 'gruvbox-community/gruvbox'
+    " No GUI theme
+    Plug 'huyvohcmc/atlas.vim'
     " Language Server Provider
     Plug 'neovim/nvim-lspconfig'
     " Completion - https://github.com/hrsh7th/nvim-cmp
@@ -43,8 +45,14 @@ vim.cmd([[
     Plug 'ray-x/lsp_signature.nvim'
 
     call plug#end()
+
 ]])
 
 vim.cmd([[
-    colorscheme gruvbox
+    if has("gui_running")  
+        colorscheme gruvbox
+    else  
+        colorscheme atlas
+    endif
 ]])
+
